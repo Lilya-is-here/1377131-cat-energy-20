@@ -6,14 +6,12 @@
   </head>
   <body class="page-body">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
-  </body>
-</html>
-<header class="site-header">
+    <header class="site-header">
 <a href="#" class="site-header__logo"><img src="https://via.placeholder.com/150x150" alt="Cat Energy"></a>
-<h1 class="site-header__title"><span class="site-header__title accent-title">Cat</span> Energy</h1>
+<p class="site-header__title"><span class="site-header__title accent-title">Cat</span> Energy</p>
+
 <nav class="main-nav">
+  <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 <div class="main-nav__wrapper">
   <ul class="main-nav__list site-list"> <!-- Является ли логотип с названием элементом списка? -->
     <li class="site-list__item site-list__item--active">
@@ -22,7 +20,7 @@
       </a>
     </li>
     <li class="site-list__item">
-      <a href="photo.html">
+      <a href="catalog.html">
         Каталог продукции
       </a>
     </li>
@@ -38,11 +36,12 @@
 
 </header>
 <main class="site-main">
+  <h1 class="site-main__title">HTML Academy: Кэт энерджи</h1>
 <section class="promo">
   <h2 class="promo__title">Функциональное
     питание для котов</h2>
     <p class="promo__sub-title">Занялся собой? Займись котом!</p>
-    <a href="promo__link">Подобрать программу</a>
+    <a href="form.html" class="promo__link button">Подобрать программу</a>
     
 </section>
 
@@ -136,30 +135,26 @@
   </div>
 </section>
 
-<section class="contacts">
-<h2 class="visually-hidden">Контакты</h2>
-
-<div class="contacts__wrapper">
-
-  <p class="contacts__greeting">Приглашаем <br>
-    к сотрудничеству <br>
-     дилеров!</p>
-
-<p class="contacts__address">
-  ул. Большая  <br>
-Конюшенная, д. 19/8 <br>
-Санкт-Петербург
-</p>
-
-</div>
-
-<div class="contacts__map"><img src="https://via.placeholder.com/150x150" alt="Стало"</div>
-
-</section>
 
 
 </main>
 <footer class="site-footer">
+
+  <div class=" site-footer__contacts contacts">
+
+    <p class="contacts__greeting">Приглашаем <br>
+      к сотрудничеству <br>
+       дилеров!</p>
+  
+  <p class="contacts__address">
+    ул. Большая  <br>
+  Конюшенная, д. 19/8 <br>
+  Санкт-Петербург
+  </p>
+  
+  </div>
+  
+  <div class="site-footer__map"><img src="https://via.placeholder.com/150x150" alt=" ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></div>
 
   <p class="site-footer__title"><span class="site-footer__title accent-title">Cat</span> Energy</p>
   <div class="site-footer__social social">
@@ -182,3 +177,5 @@
   </div>
 
 </footer>
+</body>
+</html>
