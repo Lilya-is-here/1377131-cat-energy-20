@@ -1,0 +1,44 @@
+
+@import"_mixins";
+
+.site-header {
+  margin: 0 auto;
+  width: 320px;
+  background-color: $basic-white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+}
+
+.main-nav__toggle {
+ position: relative;
+ width: 24px;
+ height: 16px;
+ border:none;
+background-color: transparent;
+ border-top: 1.5px solid $basic-black;
+ border-bottom: 1.5px solid $basic-black;
+&::before {
+  position: absolute;
+  content: "";
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  height: 1.5px;
+  width: 24px;
+  background-color: $basic-black;
+  left: 0;
+  bottom: 6px;
+}
+  .visually-hidden{
+    @include visually-hidden;
+  }
+}
+
+.site-list {
+  list-style: none;
+  display: none;
+}
+
+
+
