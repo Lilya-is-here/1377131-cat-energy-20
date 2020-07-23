@@ -1,0 +1,145 @@
+.info {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 320px;
+}
+
+.info__list {
+  list-style: none;
+  margin: 0;
+  padding-top: 40px;
+  padding-left: 100px;
+  padding-right: 21px;
+}
+
+.info__title {
+  margin: 0;
+  padding-top: 27px;
+  padding-left: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.info__item {
+  padding-bottom: 27px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-dark-grey;
+}
+
+.info__item:nth-child(1) {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $basic-green;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    top: -2px;
+    left: -80px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    left: -74px;
+  }
+}
+
+.info__item:nth-child(2) {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $basic-green;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    top: -2px;
+    left: -80px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/advantage-powder@1x.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    top: 2px;
+    left: -74px;
+  }
+}
+
+.info__item:nth-child(3) {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $basic-green;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    top: -2px;
+    left: -80px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/advantage-dining@1x.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    top: 4px;
+    left: -77px;
+  }
+}
+
+.info__item:nth-child(4) {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $basic-green;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    top: -2px;
+    left: -80px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/advantage-clock@1x.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    top: 4px;
+    left: -76px;
+  }
+}

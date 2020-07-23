@@ -1,11 +1,11 @@
-@import"_variables.scss";
-@import"_mixins";
-@import"_fonts";
+@import "_variables.scss";
+@import "_mixins";
+@import "_fonts";
 
 .program__list {
   list-style: none;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
   width: 320px;
 }
 
@@ -16,111 +16,105 @@
   margin-right: 20px;
 }
 
-  .program__title {
-    margin: 0;
-    padding-top: 30px;
-    padding-bottom: 29px;
-    padding-left: 91px;
-    position: relative;
-    font-family: "Oswald", Arial, sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 37px;
-text-transform: uppercase;
-  }
+.program__title {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 29px;
+  padding-left: 91px;
+  position: relative;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
 
+.program__title--pro::before {
+  position: absolute;
+  content: "";
+  background-color: $basic-green;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: 24px;
+  top: 22px;
+}
 
-  .program__title--pro::before {
-    position: absolute;
-    content: "";
-    background-color: $basic-green;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    left: 24px;
-    top: 22px;
-  }
-
-
-  .program__title--slim::before {
-    position: absolute;
-    content: "";
-    background-color: $basic-green;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    left: 22px;
-    top: 21px;
-  }
-
+.program__title--slim::before {
+  position: absolute;
+  content: "";
+  background-color: $basic-green;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: 22px;
+  top: 21px;
+}
 
 .program__title--slim::after {
   position: absolute;
   content: "";
-  background-image: url(../img/icon-cat-slim.svg);
+  background-image: url("../img/icon-cat-slim.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   width: 50px;
-height: 53px;
-top: 21px;
-left: 29px;
+  height: 53px;
+  top: 21px;
+  left: 29px;
+}
 
-  }
-
-  .program__title--pro::after {
-    position: absolute;
-    content: "";
-    background-image: url(../img/icon-cat-pro.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    width: 67px;
+.program__title--pro::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 67px;
   height: 50px;
   top: 32px;
   left: 13px;
-    }
-
-    .program__description {
-      position: relative;
-      margin: 0;
-      padding-left: 20px;
-      padding-right: 33px;
-      font-family: Arial, Helvetica, sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 18px;
-color: $special-dark-grey;
-&::after {
-  position: absolute;
-  content: "";
-  background-color: $border-grey;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  width: 240px;
-height: 1px;
-bottom: -23px;
-left: 20px;
-}
 }
 
+.program__description {
+  position: relative;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 33px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-dark-grey;
 
-
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: $border-grey;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 240px;
+    height: 1px;
+    bottom: -23px;
+    left: 20px;
+  }
+}
 
 .program__link {
   display: block;
   padding-top: 44px;
   padding-bottom: 21px;
   padding-left: 19px;
-  color:$basic-black;
-  font-family: "Oswald",Arial, sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 16px;
-text-transform: uppercase;
+  color: $basic-black;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
 }
