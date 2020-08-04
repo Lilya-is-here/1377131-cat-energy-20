@@ -9,40 +9,43 @@
 
 <body class="page-body">
   <header class="site-header">
-    <a href="index.html" class="site-header__logo"><img src="https://via.placeholder.com/150x150" alt="Cat Energy">
-      <p class="site-header__title"><span class="site-header__title accent-title">Cat</span> Energy</p>
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a>
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+         <div class="site-header__wrapper">
+          <a href="index.html" class="site-header__logo">
+            <img src="img/logo-mobile.svg" width="191" height="37.61" alt="Cat Energy">
+              </a>
+            <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="catalog.html">
+                  Каталог продукции
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a>
+                  Подбор программы
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+         </div>
   </header>
   <main class="site-main">
     <section class="program-form">
-      <h1>Подбор программы</h1>
-      <h2 class="program-form__title"> Заполните анкету, и мы подберем
+     <div class="program-form__wrapper">
+      <h1 class="program-form__title">Подбор программы</h1>
+      <h2 class="program-form__sub-title"> Заполните анкету, и мы подберем
         программу питания для вашего кота</h2>
       <form class="program-form__form form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__wrapper profile">
-          <p class="profile__name name">
+                   <p class="profile__name name">
             <label for="name">Имя:*</label>
             <input class="name__input" id="name" type="text" name="name" placeholder="Барсик" />
           </p>
@@ -124,9 +127,10 @@
             </ul>
           </fieldset>
         </div>
-        <button class="form__submit button" type="submit">Отправить заявку</button>
-        <p class="form__sup-info">* — Обязательные поля</p>
+       <div class="form__wrapper program-submit"> <button class="program-submit__button button" type="submit">Отправить заявку</button>
+        <p class="form__sub-info">* — Обязательные поля</p></div>
       </form>
+     </div>
     </section>
   </main>
   <footer class="site-footer">
@@ -140,8 +144,8 @@
         Санкт-Петербург
       </p>
     </div>
-    <div class="site-footer__map"><img src="https://via.placeholder.com/150x150"
-        alt=" ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></div>
+    <div class="site-footer__map">
+      <img src="https://via.placeholder.com/150x150" alt=" ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></div>
     <p class="site-footer__title"><span class="site-footer__title accent-title">Cat</span> Energy</p>
     <div class="site-footer__social social">
       <ul class="social__list">
