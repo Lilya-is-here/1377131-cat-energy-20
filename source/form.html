@@ -5,132 +5,138 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body class="page-body">
   <header class="site-header">
-         <div class="site-header__wrapper">
-          <a href="index.html" class="site-header__logo">
-            <img src="img/logo-mobile.svg" width="191" height="37.61" alt="Cat Energy">
+    <div class="site-header__wrapper">
+
+      <div class="site-header__top-wrapper">
+        <a href="index.html" class="site-header__logo">
+          <img src="img/logo-mobile.svg" width="191" height="37.61" alt="Cat Energy"></a>
+        <button class="site-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">
+                Главная
               </a>
-            <nav class="main-nav">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a href="index.html">
-                  Главная
-                </a>
-              </li>
-              <li class="site-list__item">
-                <a href="catalog.html">
-                  Каталог продукции
-                </a>
-              </li>
-              <li class="site-list__item">
-                <a>
-                  Подбор программы
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-         </div>
+            </li>
+            <li class="site-list__item ">
+              <a class="site-list__link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="site-main">
     <section class="program-form">
-     <div class="program-form__wrapper">
-      <h1 class="program-form__title">Подбор программы</h1>
-      <h2 class="program-form__sub-title"> Заполните анкету, и мы подберем
-        программу питания для вашего кота</h2>
-      <form class="program-form__form form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form__wrapper profile">
-                   <p class="profile__name name">
-            <label for="name">Имя:*</label>
-            <input class="name__input" id="name" type="text" name="name" placeholder="Барсик" />
-          </p>
-          <p class="profile__weight weight">
-            <label for="weight">Вес (кг):*</label>
-            <input class="weight__input" id="weight" type="text" name="weight" placeholder="7" />
-          </p>
-          <p class="profile__age age">
-            <label for="age">Возраст (лет):</label>
-            <input class="age__input" id="age" type="text" name="age" placeholder="7" />
-          </p>
-          <fieldset class="profile__radio-program radio-program">
-            <ul class="radio-program__list">
-              <li class="radio-program__item">
-                <label for="slim">
-                  <input class="radio-program__input" type="radio" name="program-radio" value="slim" id="slim" checked>
-                  Похудение
-                </label>
-              </li>
-              <li class="radio-program__item">
-                <label for="weight-gain">
-                  <input class="radio-program__input" type="radio" name="program-radio" value="weight-gain"
-                    id="weight-gain">
-                  Набор массы
-                </label>
-              </li>
-              <li class="radio-program__item">
-                <label for="advice">
-                  <input class="radio-program__input" type="radio" name="program-radio" value="advice" id="advice">
-                  Не знаю (Нужен ваш совет)
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
-        <div class="form__wrapper contacts-form">
-          <h2 class="contacts-form__title">Контактные данные (владельца кота)</h2>
-          <p class="contacts-form email">
-            <label for="contact-mail">E-mail:*</label>
-            <input class="email__input" id="contact-mail" type="email" name="contact-mail"
-              placeholder="kuklachev@gmail.com" />
-          </p>
-          <p class="contacts-form phone">
-            <label for="contact-phone">Телефон:*</label>
-            <input class="phone__input" id="contact-phone" type="tel" name="contact-phone"
-              placeholder="8 (960) 900-60-90" />
-          </p>
-        </div>
-        <div class="form__wrapper comment">
-          <h2 class="comment__title">Комментарий</h2>
-          <textarea class="comment__textarea" name="message" id="message" cols="40" rows="5"
-            placeholder="Расскажите обо всех повадках кота"></textarea>
-        </div>
-        <div class="form__wrapper addition">
-          <h2 class="addition__title">Дополнительно</h2>
-          <fieldset class="addition__checkbox checkbox-product">
-            <ul class="checkbox-product__list">
-              <li class="checkbox-product__list">
-                <label for="filter-sweetener">
-                  <input class="checkbox-product__input" type="checkbox" name="sweetener" id="filter-sweetener"
-                    checked />
-                  Сахарозаменитель</label>
-              </li>
-              <li class="checkbox-product__list">
-                <label for="filter-water">
-                  <input class="checkbox-product__input" type="checkbox" name="water" id="filter-water" />
-                  Питьевая вода</label>
-              </li>
-              <li class="checkbox-product__list">
-                <label for="filter-milk">
-                  <input class="checkbox-product__input" type="checkbox" name="milk" id="filter-milk" />
-                  Молоко</label>
-              </li>
-              <li class="checkbox-product__list">
-                <label for="filter-vitamin">
-                  <input class="checkbox-product__input" type="checkbox" name="vitamin" id="filter-vitamin" />
-                  Витамины</label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
-       <div class="form__wrapper program-submit"> <button class="program-submit__button button" type="submit">Отправить заявку</button>
-        <p class="form__sub-info">* — Обязательные поля</p></div>
-      </form>
-     </div>
+      <div class="program-form__wrapper">
+        <h1 class="program-form__title">Подбор программы</h1>
+        <h2 class="program-form__sub-title"> Заполните анкету, и мы подберем
+          программу питания для вашего кота</h2>
+        <form class="program-form__form form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__wrapper profile">
+            <p class="profile__name name">
+              <label for="name">Имя:*</label>
+              <input class="name__input" id="name" type="text" name="name" placeholder="Барсик" />
+            </p>
+            <p class="profile__weight weight">
+              <label for="weight">Вес (кг):*</label>
+              <input class="weight__input" id="weight" type="text" name="weight" placeholder="7" />
+            </p>
+            <p class="profile__age age">
+              <label for="age">Возраст (лет):</label>
+              <input class="age__input" id="age" type="text" name="age" placeholder="7" />
+            </p>
+            <fieldset class="profile__radio-program radio-program">
+              <ul class="radio-program__list">
+                <li class="radio-program__item">
+                  <label for="slim">
+                    <input class="radio-program__input" type="radio" name="program-radio" value="slim" id="slim"
+                      checked>
+                    Похудение
+                  </label>
+                </li>
+                <li class="radio-program__item">
+                  <label for="weight-gain">
+                    <input class="radio-program__input" type="radio" name="program-radio" value="weight-gain"
+                      id="weight-gain">
+                    Набор массы
+                  </label>
+                </li>
+                <li class="radio-program__item">
+                  <label for="advice">
+                    <input class="radio-program__input" type="radio" name="program-radio" value="advice" id="advice">
+                    Не знаю (Нужен ваш совет)
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="form__wrapper contacts-form">
+            <h2 class="contacts-form__title">Контактные данные (владельца кота)</h2>
+            <p class="contacts-form email">
+              <label for="contact-mail">E-mail:*</label>
+              <input class="email__input" id="contact-mail" type="email" name="contact-mail"
+                placeholder="kuklachev@gmail.com" />
+            </p>
+            <p class="contacts-form phone">
+              <label for="contact-phone">Телефон:*</label>
+              <input class="phone__input" id="contact-phone" type="tel" name="contact-phone"
+                placeholder="8 (960) 900-60-90" />
+            </p>
+          </div>
+          <div class="form__wrapper comment">
+            <h2 class="comment__title">Комментарий</h2>
+            <textarea class="comment__textarea" name="message" id="message" cols="40" rows="5"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+          <div class="form__wrapper addition">
+            <h2 class="addition__title">Дополнительно</h2>
+            <fieldset class="addition__checkbox checkbox-product">
+              <ul class="checkbox-product__list">
+                <li class="checkbox-product__list">
+                  <label for="filter-sweetener">
+                    <input class="checkbox-product__input" type="checkbox" name="sweetener" id="filter-sweetener"
+                      checked />
+                    Сахарозаменитель</label>
+                </li>
+                <li class="checkbox-product__list">
+                  <label for="filter-water">
+                    <input class="checkbox-product__input" type="checkbox" name="water" id="filter-water" />
+                    Питьевая вода</label>
+                </li>
+                <li class="checkbox-product__list">
+                  <label for="filter-milk">
+                    <input class="checkbox-product__input" type="checkbox" name="milk" id="filter-milk" />
+                    Молоко</label>
+                </li>
+                <li class="checkbox-product__list">
+                  <label for="filter-vitamin">
+                    <input class="checkbox-product__input" type="checkbox" name="vitamin" id="filter-vitamin" />
+                    Витамины</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="form__wrapper program-submit"> <button class="program-submit__button button"
+              type="submit">Отправить заявку</button>
+            <p class="form__sub-info">* — Обязательные поля</p>
+          </div>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="site-footer">

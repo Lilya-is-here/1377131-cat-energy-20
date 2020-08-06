@@ -3,29 +3,27 @@
 }
 
 .page-body {
-
   margin: 0;
   padding: 0;
   min-height: 100%;
 }
 
-
 @media (min-width: $mobile-width-only) {
   .page-body {
-      min-width: 320px;
+    min-width: 320px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .page-body {
-      min-width: 768px;
+    min-width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-body {
     min-width: 1200px;
-}
+  }
 }
 
 a {

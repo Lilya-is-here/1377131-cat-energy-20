@@ -1,12 +1,33 @@
+@import "_variables.scss";
+
 .page-body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
   margin: 0 auto;
-  min-width: 320px;
 }
 
-.catalog__item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+@media (max-width: $mobile-width-only) {
+  .catalog__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    column-gap: 60px;
+    row-gap: 59px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    column-gap: 80px;
+    row-gap: 63px;
+  }
 }

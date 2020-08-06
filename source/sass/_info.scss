@@ -76,6 +76,7 @@
       top: -2px;
       left: -80px;
     }
+
     &::after {
       position: absolute;
       content: "";
@@ -193,7 +194,7 @@
       width: 80px;
       height: 80px;
       top: 40px;
-      left: 0px;
+      left: 0;
     }
 
     &::after {
@@ -212,6 +213,7 @@
   .info__item:nth-child(2) {
     position: relative;
     width: 227px;
+
     &::before {
       position: absolute;
       content: "";
@@ -240,6 +242,7 @@
   .info__item:nth-child(3) {
     position: relative;
     width: 209px;
+
     &::before {
       position: absolute;
       content: "";
@@ -269,6 +272,7 @@
     position: relative;
     width: 245px;
     margin-left: -5px;
+
     &::before {
       position: absolute;
       content: "";
@@ -314,9 +318,7 @@
     display: grid;
     grid-template-columns: min-content min-content min-content min-content;
     column-gap: initial;
-
   }
-
 
   .info__item {
     padding-top: 151px;
@@ -330,11 +332,11 @@
     color: $special-dark-grey;
   }
 
-
   .info__item:nth-child(1) {
     position: relative;
     width: 201px;
     margin-right: 124px;
+
     &::before {
       position: absolute;
       content: "";
@@ -344,7 +346,7 @@
       width: 80px;
       height: 80px;
       top: 40px;
-      left: 0px;
+      left: 0;
     }
 
     &::after {
@@ -364,6 +366,7 @@
     position: relative;
     width: 227px;
     margin-right: 98px;
+
     &::before {
       position: absolute;
       content: "";
@@ -393,6 +396,7 @@
     position: relative;
     width: 209px;
     margin-right: 122px;
+
     &::before {
       position: absolute;
       content: "";
@@ -422,6 +426,7 @@
     position: relative;
     width: 245px;
     margin-left: -5px;
+
     &::before {
       position: absolute;
       content: "";
