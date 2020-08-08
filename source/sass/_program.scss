@@ -235,6 +235,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
   .program__title {
@@ -309,8 +310,13 @@
     left: 34px;
   }
 
+
   .program__item:not(:last-child) {
     margin-right: 80px;
+  }
+
+  .program__item {
+    width: 570px;
   }
 }
 

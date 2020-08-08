@@ -138,8 +138,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
   .site-header__wrapper {
-    z-index: 20;
     background-color: transparent;
     margin: 0 auto;
     padding: 0 10px;
@@ -157,10 +162,24 @@
     display: none;
   }
 
+  .site-list__link {
+    color: $basic-white;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .site-list__item--active {
+    border-bottom: 2px solid $basic-white;
+  }
+
   .site-list {
     display: flex;
     margin-right: 110px;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 52px;
   }
 }

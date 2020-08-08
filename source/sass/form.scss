@@ -5,6 +5,7 @@
 }
 
 .program-form__title {
+  margin: 0;
   padding-top: 27px;
   padding-bottom: 37px;
   padding-left: 20px;
@@ -16,8 +17,10 @@
 }
 
 .program-form__sub-title {
+  margin: 0;
   padding-bottom: 39px;
   padding-left: 20px;
+  padding-right: 74px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -36,6 +39,75 @@
   color: $special-dark-grey;
 }
 
+.name,
+.weight,
+.age {
+  margin: 0;
+}
+
+.name {
+  margin-left: 19px;
+  margin-bottom: 10px;
+}
+
+.weight {
+  margin-left: 19px;
+  margin-bottom: 13px;
+}
+
+.age {
+  margin-left: 19px;
+  margin-bottom: 35px;
+}
+
+.profile__radio-program {
+  border: none;
+  padding: 0;
+}
+
+.radio-program__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  margin-left: 18px;
+  margin-bottom: 48px;
+}
+
+.radio-program__input {
+  @include visually-hidden;
+}
+
+.radio-program__label::before {
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  border: 1px solid $special-grey2;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: -40px;
+  top: -10px;
+}
+
+.radio-program__input[type="radio"]:checked + .radio-program__label::after {
+  position: absolute;
+  content: "";
+  background-color: $basic-green;
+  width: 13.5px;
+  height: 13.5px;
+  border-radius: 50%;
+  left: 10px;
+  top: 9px;
+}
+
+.radio-program__label {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
 .radio-program,
 .addition__checkbox {
   font-family: "Oswald", "Arial", sans-serif;
@@ -47,7 +119,6 @@
   color: $special-dark-grey2;
 }
 
-.contacts-form__title,
 .comment__title,
 .addition__title {
   font-family: "Oswald", "Arial", sans-serif;
@@ -67,7 +138,6 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  text-transform: uppercase;
   color: $special-dark-grey;
 }
 
@@ -87,4 +157,49 @@
   font-size: 14px;
   line-height: 16px;
   text-align: center;
+}
+
+.name__input,
+.age__input,
+.weight__input {
+  margin-left: 12px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 1px solid $border-input;
+}
+
+.age__input {
+  width: 154px;
+  padding-left: 14.12px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.weight__input {
+  width: 186px;
+  padding-left: 16px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.name__input {
+  padding-left: 12.12px;
+  width: 212px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.contacts-form__title {
+  margin: 0;
+  margin-left: 19px;
+  margin-right: 114px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
 }
